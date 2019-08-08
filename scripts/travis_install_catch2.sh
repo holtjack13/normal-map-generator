@@ -10,4 +10,4 @@ cd Catch2
 mkdir build
 cd build
 cmake .. -DBUILD_TESTING=OFF
-sudo cmake --build ./ --target install
+sudo make install
