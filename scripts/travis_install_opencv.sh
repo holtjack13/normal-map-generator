@@ -17,7 +17,7 @@ cd build
 # Build project and install to machine
 cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local  \
          -DBUILD_DOCS=OFF -DBUILD_EXAMPLES=OFF -DBUILD_opencv_apps=OFF  \
-         -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF
+         -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_JAVA=OFF
 
 make -j4
 sudo make install
