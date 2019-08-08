@@ -1,0 +1,11 @@
+dist: trusty
+sudo: false
+language: cpp
+
+script:
+  - cd build
+  - cmake .. -DCMAKE_BUILD_TYPE=Debug -DTESTS_ON=1
+  - cmake --build . -- -j2
+  - cd tests
+  - ctest
+
