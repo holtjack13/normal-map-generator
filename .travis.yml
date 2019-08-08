@@ -3,6 +3,7 @@ sudo: false
 language: cpp
 
 script:
+  - mkdir build bin tests/bin
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=Debug -DTESTS_ON=1
   - cmake --build . -- -j2
