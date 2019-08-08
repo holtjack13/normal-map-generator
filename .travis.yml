@@ -1,12 +1,15 @@
 dist: trusty
-sudo: false
 language: cpp
+
+before_install:
+  - scripts/travis_install_opencv.sh
+  - scripts/travis_install_catch2.sh
 
 script:
   - mkdir build bin tests/bin
   - cd build
   - cmake .. -DCMAKE_BUILD_TYPE=Debug -DTESTS_ON=1
-  - cmake --build . -- -j2
+  - cmake --build . -- -j4
   - cd tests
   - ctest
 
