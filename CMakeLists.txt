@@ -8,11 +8,8 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 find_package( OpenCV REQUIRED )
 
 # Create executable and configure
-add_executable(nmg-bin)
-
-target_sources(nmg-bin
-    PRIVATE
-        src/main.cpp
+add_executable(nmg-bin
+    src/main.cpp    
 )
 
 target_include_directories(nmg-bin 

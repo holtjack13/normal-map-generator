@@ -8,11 +8,8 @@ find_package(OpenCV REQUIRED)
 
 enable_testing()
 
-add_executable(nmg-test)
-
-target_sources(nmg-test
-    PRIVATE
-        src/main_test.cpp
+add_executable(nmg-test
+    src/main_test.cpp
 )
 
 target_include_directories(nmg-test
