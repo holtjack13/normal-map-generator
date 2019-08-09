@@ -24,5 +24,10 @@ target_link_libraries(nmg-test
         ${OpenCV_LIBS}
 )
 
+target_compile_features(nmg-test
+    PUBLIC
+        cxx_std_11
+)
+
 include(ParseAndAddCatchTests)
 ParseAndAddCatchTests(nmg-test)

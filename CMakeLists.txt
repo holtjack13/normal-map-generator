@@ -23,6 +23,11 @@ target_link_libraries(nmg-bin
         ${OpenCV_LIBS}
 )
 
+target_compile_features(nmg-bin
+    PUBLIC
+        cxx_std_11
+)
+
 # Add relevant compiler warnings depending on platform 
 if(MSVC)
     target_compile_options(nmg-bin
