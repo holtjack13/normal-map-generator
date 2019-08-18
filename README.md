@@ -44,7 +44,8 @@ There are some extra flags you may wish to pass to the cmake command:
 ## Using the program
 To run the program, navigate to the bin directory and run the program:
 ```console
-foo@bar:~/normal-map-generator/bin ./nmg-bin <texture-image> <output-image-name>
+foo@bar:~/normal-map-generator/bin$ ./nmg-bin <texture-image> <output-image-name>
 ```
+
 [1]: https://en.wikipedia.org/wiki/Normal_mapping 
 [2]: https://en.wikipedia.org/wiki/Lambertian_reflectance
