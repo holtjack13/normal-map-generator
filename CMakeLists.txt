@@ -10,6 +10,7 @@ find_package( OpenCV REQUIRED )
 # Create executable and configure
 add_executable(nmg-bin
     src/main.cpp    
+    src/normal_map_generator.cpp    
 )
 
 target_include_directories(nmg-bin 

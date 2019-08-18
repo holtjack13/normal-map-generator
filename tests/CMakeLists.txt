@@ -9,11 +9,13 @@ find_package(OpenCV REQUIRED)
 enable_testing()
 
 add_executable(nmg-test
-    src/main_test.cpp
+    src/normal_map_generator_tests.cpp
+    ${CMAKE_SOURCE_DIR}/src/normal_map_generator.cpp
 )
 
 target_include_directories(nmg-test
     PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
         include
         ${OpenCV_INCLUDE_DIRS}
 )
