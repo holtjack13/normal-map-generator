@@ -7,6 +7,7 @@ As stated on Wikipedia, [normal mapping][1] is:
 > a technique used for faking the lighting of bumps and dents - an 
 > implementation of bump mapping. It is used to add more details without
 > using more polygons.
+
 The artifact produced from this process is a "normal map", a color image storing
 the normals of the mapped surface. A surface normal is a vector perpendicular
 to a particular point on a surface. These surface normals are used by lighting
