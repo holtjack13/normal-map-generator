@@ -11,5 +11,5 @@ int main(int argc, char *argv[])
 
     cv::Mat normalMap { nmg.generate() };
 
-    cv::imwrite("output_normal_map.jpg", normalMap);
+    cv::imwrite(argv[2], normalMap);
 }

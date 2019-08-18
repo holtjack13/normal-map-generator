@@ -18,7 +18,7 @@ const std::array<cv::Mat, 2> NormalMapGenerator::computeDerivatives()
     cv::Sobel(mHeightMap, derivativeX, -1, 1, 0, 5);
     cv::Sobel(mHeightMap, derivativeY, -1, 0, 1, 5);
 
-    return std::array<cv::Mat, 2>{derivativeX, derivativeY};
+    return std::array<cv::Mat, 2>{ derivativeX, derivativeY };
 }
 
 cv::Vec3b NormalMapGenerator::computeNormal(uchar derivX, uchar derivY)
@@ -39,7 +39,7 @@ cv::Vec3b NormalMapGenerator::computeNormal(uchar derivX, uchar derivY)
 
 cv::Mat NormalMapGenerator::generate()
 {
-    const std::array<cv::Mat, 2> derivatives { computeDerivatives() };
+    const std::array<cv::Mat, 2> derivatives ( computeDerivatives() );
 
     // Initialise 3 channel RGB image
     cv::Mat normalMap ( mHeightMap.rows, mHeightMap.cols, CV_8UC3 );
